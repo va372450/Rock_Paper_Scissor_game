@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/game.css">
+    <script src="js/game.js"></script>
+</head>
+<body>
+
+    <heading>
+        <nav>
+            <div class="top">
+                <ul>
+                    <li>
+                        <a href="">Rock</a>
+                        <a href="">Paper</a>
+                        <a href="">Scissor</a>
+                    </li>
+                </ul>
+                <div class="emoji">
+                    <i class="fa fa-hand-rock-o"></i>
+                    <i class="fa fa-hand-paper-o"></i>
+                    <i class="fa fa-hand-scissors-o"></i>
+
+                </div>
+            </div>
+        </nav>
+    </heading>
+    <section>
+        <h4>Let's Play</h4>
+        <div class="container">
+            <div class="score-container">
+                <span class='user'>YOU</span>
+                <span id='score'></span>
+                <span class='com'>COM</span>
+            </div>
+            <div class="button">
+                <button id="rock" class='bn' onclick="game(this.value)" value='rock'> <i class='fa fa-hand-rock-o'></i>
+                </button>
+                <button id="paper" class='bn' onclick="game(this.value)" value='paper'> <i
+                        class='fa fa-hand-paper-o'></i>
+                </button>
+                <button id="scissor" class='bn' onclick="game(this.value)" value='scissor'> <i
+                        class='fa fa-hand-scissors-o'></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div id="challenge">
+        <div class="option">
+            <div id="you">
+                <div id="youroption"></div>
+                <br>
+                <div class="who">You</div>
+            </div>
+            <div id="result">
+
+                <p id="who"></p>
+
+            </div>
+            <div id='com'>
+                <div id="comoption"></div>
+                <br>
+                <div class="who">Com</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
